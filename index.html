@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Selfie App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <div class="row mx-5">
+                <a href="" id="link" download="myselfie.png"></a>
+                <h1 style="background-color: #F5B7B1; color: rgb(254, 234, 249); font-family: 'Poppins', sans-serif;">
+                    <span class="glyphicon glyphicon-heart"></span> Voice Selfie App 
+                    <img id="logo_img" src="selfie.png">
+                </h1>
+                <hr>
+                <div class="">
+<label style="color:rgb(207, 172, 125)">Your voice output:</label>
+                  <button class="btn float-left" onclick="start()"><img id="microphone" src="micR.gif" width="60" height="60"></button>
+                  <textarea class="form-control" id="textbox" readonly="true"></textarea>
+ 
+                </div>       
+
+                <h4>Please press allow as soon as popup comes. After you give a voice command</h4>
+                <p style="color:rgb(207, 172, 125)">Click the microphone.</p>
+                <div class="">
+                    <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #bc78d1;">
+                        Say "take my selfie"
+                    </h3>
+                    <div class="vr"></div>
+                    
+                    
+                </div>
+            </div>
+            <label style="color:#7793b5">Your webcam:</label>
+            <div id="camera"></div>
+            <br>
+            <label style="color:#7198a8">Your selfie Will Display Here:</label>
+            <div id="result"></div>
+        </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
